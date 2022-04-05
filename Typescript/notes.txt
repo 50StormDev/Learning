@@ -1,0 +1,28 @@
+Used to make javascript static typed
+
+PROS:
+  more robust 
+  easily Sopt Bugs 
+  Predictability
+  Readability
+  Popular
+
+CONS:
+  More code to write 
+  more to learn 
+  required compilation 
+  Not True Static Typing
+
+** Not so necessary for small projects
+
+extensions will be .ts or .tsx
+
+TSC(TypeScript Compiler) is used to compile .ts files to JS 
+
+TypeScript set up 
+  sudo npm install -g TypeScript
+
+
+tsconfig 
+configurate how the compiler will work 
+
