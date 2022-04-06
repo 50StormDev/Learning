@@ -19,7 +19,7 @@ class CreateCommon extends Creator {
 }
 
 // ConcreteCreator (SubClass of Creator) for create Premium account
-class CreatePremiun extends Creator {
+class CreatePremium extends Creator {
   register(): Account {
     return new PremiumAccount()
   }
@@ -58,4 +58,4 @@ function clientCode3(creator: Creator){
 }
 
 clientCode3(new CreateCommon) // expect: "Common Client with a Limit of 1000¥ has been created!"
-clientCode3(new CreatePremiun) // expect: "Premium Client with a Limit of 9000¥ has been created!"
+clientCode3(new CreatePremium) // expect: "Premium Client with a Limit of 9000¥ has been created!"

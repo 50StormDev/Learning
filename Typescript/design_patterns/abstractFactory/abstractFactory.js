@@ -1,4 +1,5 @@
 // Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes 
+// Create Concrete Product for Victorian
 var VictorianChair = /** @class */ (function () {
     function VictorianChair() {
     }
@@ -7,6 +8,7 @@ var VictorianChair = /** @class */ (function () {
     };
     return VictorianChair;
 }());
+// Create Concrete Product for Modern
 var ModernChair = /** @class */ (function () {
     function ModernChair() {
     }
@@ -47,7 +49,7 @@ var ModernTable = /** @class */ (function () {
     };
     return ModernTable;
 }());
-// Concrete Factory for Victorian
+// Create Concrete Factory for Victorian
 var VictorianFurnitureFactory = /** @class */ (function () {
     function VictorianFurnitureFactory() {
     }
@@ -62,7 +64,7 @@ var VictorianFurnitureFactory = /** @class */ (function () {
     };
     return VictorianFurnitureFactory;
 }());
-// Concreate Factory for Modern
+// Create Concreate Factory for Modern
 var ModernFurnitureFactory = /** @class */ (function () {
     function ModernFurnitureFactory() {
     }
