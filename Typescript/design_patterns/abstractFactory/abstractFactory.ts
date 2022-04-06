@@ -2,24 +2,26 @@
 
 // Code based on the Furniture example at https://refactoring.guru/design-patterns/abstract-factory
 
-// Chairs 
+// Create Product Interface
 interface Chair {
   type(): string
 }
 
+// Create Concrete Product for Victorian
 class VictorianChair implements Chair {
   type(): string {
     return "Victorian Chair"
   }
 }
 
+// Create Concrete Product for Modern
 class ModernChair implements Chair {
   type(): string {
     return "Modern Chair"
   }
 }
 
-//Sofa
+// Same above, but now for Sofas
 interface Sofa {
   type(): string
 }
@@ -36,7 +38,7 @@ class ModernSofa implements Sofa {
   }
 }
 
-// Table
+// Same above, but now for Tables
 interface Table {
   type(): string
 }
@@ -54,14 +56,14 @@ class ModernTable implements Table {
 }
 
 
-// Factory 
+// Create de Abstract Factory
 interface FurnitureFactory {
   createChair(): Chair
   createSofa(): Sofa
   createTable(): Table
 }
 
-// Concrete Factory for Victorian
+// Create Concrete Factory for Victorian
 class VictorianFurnitureFactory implements FurnitureFactory{
   createChair(): Chair {
     return new VictorianChair()
@@ -74,7 +76,7 @@ class VictorianFurnitureFactory implements FurnitureFactory{
   }
 }
 
-// Concreate Factory for Modern
+// Create Concreate Factory for Modern
 class ModernFurnitureFactory implements FurnitureFactory{
   createChair(): Chair {
     return new ModernChair()
@@ -86,7 +88,6 @@ class ModernFurnitureFactory implements FurnitureFactory{
     return new ModernTable()
   }
 }
-
 
 function clientCode4(factory: FurnitureFactory){
   console.log("fornitures:")
