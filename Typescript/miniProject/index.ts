@@ -18,6 +18,7 @@ class Person implements PersonInterface {
   }
 }
 
+
 // Define an Interface for a client
 interface ClientInterface {
   // Properties
@@ -79,6 +80,7 @@ class Client extends Person implements ClientInterface  {
   }
 
 }
+
 
 
 let user1: Person = new Person("Rafael","Igarashi", "rafael@igarashi.com") 
